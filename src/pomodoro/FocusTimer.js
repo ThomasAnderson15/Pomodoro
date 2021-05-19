@@ -3,14 +3,13 @@ import { minutesToDuration } from "../utils/duration";
 
 function FocusTimer({increaseFocus, decreaseFocus, focusDuration, isTimerRunning}) {
 
-    console.log(isTimerRunning)
     const increaseClick = () => {
         if (isTimerRunning) {
             return null;
         } else {
          increaseFocus()
         }
-    }
+    };
 
     const decreaseClick = () => {
         if (isTimerRunning) {
@@ -18,7 +17,7 @@ function FocusTimer({increaseFocus, decreaseFocus, focusDuration, isTimerRunning
         } else {
          decreaseFocus()
         }
-    }
+    };
 
     return (
 <div className="input-group input-group-lg mb-2">

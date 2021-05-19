@@ -10,7 +10,7 @@ function BreakTimer({increaseBreak, decreaseBreak, breakDuration, isTimerRunning
         } else{
             increaseBreak()
         }
-    }
+    };
 
     const decreaseClick = () => {
         if (isTimerRunning) {
@@ -18,7 +18,7 @@ function BreakTimer({increaseBreak, decreaseBreak, breakDuration, isTimerRunning
         } else{
             decreaseBreak()
         }
-    }
+    };
 
     return (
 <div className="input-group input-group-lg mb-2">

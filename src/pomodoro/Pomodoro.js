@@ -108,7 +108,6 @@ function Pomodoro() {
   const decreaseFocus = () => {setFocusDuration((prevDuration)=> prevDuration > 5 ? prevDuration-5 : prevDuration)};
   const decreaseBreak = () => {setBreakDuration((prevDuration)=> prevDuration > 1 ? prevDuration-1 : prevDuration)};
 
-console.log(isTimerRunning)
   return (
     <div className="pomodoro">
       <div className="row">
